@@ -1,0 +1,28 @@
+.navbar {
+ @apply   drop-shadow-sm bg-white w-full flex  items-center justify-between px-20;
+ height: 7rem;
+ position: sticky;
+ top: -100px; /* Hide the navbar initially */
+ transition: top 0.3s ease; /* Add a transition for smooth animation */
+ z-index: 100;
+ }
+
+.navbar.sticky {
+ top: 0; /* Show the navbar when it becomes sticky */
+}
+
+.items{
+ @apply flex flex-row gap-16
+}
+
+.menu-item{
+ @apply flex flex-row justify-center items-center gap-4 border-[3.5px] shadow-md border-purple-500 rounded-full  px-6 py-3 hover:scale-105 transition-all
+}
+
+.menu-item.menu-item-active{
+ @apply text-white border-[3.5px] border-white bg-purple-700 shadow-md
+}
+
+.icons{
+ @apply text-xl
+}

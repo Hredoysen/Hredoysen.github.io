@@ -1,0 +1,87 @@
+.section-one{
+@apply flex flex-col justify-center items-center;
+  height: calc(100vh - 300px);
+}
+.section-two{
+
+@apply flex items-center justify-center text-white flex-col shadow-2xl bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-purple-700 via-purple-600 to-purple-500;
+  height: calc(100vh - 400px);
+}
+.parent-three{
+@apply flex items-center  flex-col w-full ;
+  height: calc(100vh - 400px);
+}
+
+.title{
+  @apply text-white
+}
+
+.avatar{
+  @apply overflow-hidden object-cover shadow-2xl border-[3px] transition-transform bg-purple-700 hover:scale-105 border-purple-500 rounded-full flex justify-center items-center h-[350px] w-[350px];
+}
+.avatar-icon{
+  @apply overflow-hidden object-cover shadow-2xl border-[3px] text-white text-5xl transition-transform bg-purple-700 hover:scale-105 border-purple-500 rounded-full flex justify-center mb-10 items-center h-[100px] w-[100px];
+}
+
+
+.design{
+  @apply  items-center justify-between px-[200px] w-full
+}
+
+
+
+.text-deco{
+  @apply text-6xl font-semibold text-gray-900
+}
+
+.text-deco.left-sec{
+  @apply text-left;
+
+}
+
+.parent {
+  position: relative;
+min-height: calc(100vh - 112px) /* Ensure the container covers the entire viewport height */
+
+
+}
+
+.parent-two {
+min-height: calc(100vh - 112px) ;/* Ensure the container covers the entire viewport height */
+  position: relative;
+  z-index: 1;
+@apply flex flex-col items-center text-center
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.part{
+  @apply flex flex-row justify-between w-[60%] rounded-xl bg-white shadow-2xl border-2
+}
+
+.part-one{
+  @apply border-r-2 p-10 flex flex-col items-center;
+  flex: 1;
+}
+
+.section-another{
+  @apply flex items-center justify-center text-white flex-col shadow-2xl bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-purple-700 via-purple-600 to-purple-500;
+  height: calc(100vh - 400px);
+  width: 100vw;
+
+}
+.pos{
+@apply w-[100%];
+  position: absolute; /* Set position to absolute */
+  top: 30%; /* Position at the top of section-one */
+  left: 20%; /* Align with the left of section-one */
+  z-index: 2;
+
+
+}
